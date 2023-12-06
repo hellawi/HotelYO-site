@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Irish+Grover&family=Italianno&family=Montserrat+Alternates&family=Open+Sans&family=Roboto:wght@300&display=swap');
+.hero{
+  margin-top: 1px;
+	background: url(/img_premain.png) center/cover no-repeat;
+	padding: 200px 0;
+	text-align: center;
+}
+.hero-title{
+  color: white;
+  font-size: 55px;
+}
+.hotel-yo{
+  color: white;
+  font-family: Italianno;
+  font-size: 80px;
+  letter-spacing: 5px;
+}
+.main-heading{
+  text-align: center;
+  font-size: 45px;
+  text-decoration: underline;
+  letter-spacing: 5px;
+}
+.aboutus-text-main{
+  display: flex;
+  font-size: 25px;
+}
+.aboutus-img-fasad{
+  width: 1000px;
+  height: 500px;
+}
+.aboutus-textt-main{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+ .aboutus-img-fasad{
+  width: 500px;
+  height: 300px;
+ }
+ .aboutus-text-main{
+  display: block;
+ }
+}

@@ -1,0 +1,53 @@
+.contacts{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts-box-01, .contacts-box-02{
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  margin-left: 25px;
+  margin-right: 5vw;
+}
+.text-address-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.text-address{
+  font-size: 30px;
+  color: #8e8d8d;
+  font-weight: bold;
+}
+.text-box{
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts{
+    display: flex;
+    flex-direction: column;
+  }
+  .text-address-box{
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  .text-address{
+    font-size: 23px;
+  }
+  .contacts-box-01, .contacts-box-02{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 13px;
+  }
+  .br{
+    display: none;
+  }
+}

@@ -1,0 +1,157 @@
+:root {
+  --black-50: rgba(0,0,0,0.5);
+  --black-95: rgba(0,0,0,0.95);
+}
+.image-carousel {
+  display: grid;
+  grid-template-columns: 3rem 1fr 3rem;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  // width: 400px;
+  &__button {
+    &--lightbox-close,
+    &--lightbox-open,
+    &--next, 
+    &--prev {
+      background-color: transparent;
+      border: 0;
+      grid-row: 1;
+      z-index: 10;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &--lightbox-close {
+      align-self: end;
+      display: none;
+      justify-self: end;
+      grid-column: 3;
+      z-index: 11;
+    }
+    &--lightbox-open {
+      grid-column: 2;
+    }
+    &--next {
+      grid-column: 3;
+    }
+    &--prev {
+      grid-column: 1;
+    }
+  }
+  &__counter {
+    align-self: end;
+    color: white;
+    display: none;
+    grid-column: 3;
+    grid-row: 1;
+  }
+  &__figcaption {
+    color: white;
+    display: none;
+  }
+  // &__figure {
+  //   height: 150px;
+  // }
+  &__image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    // object-fit: contain;
+  }
+  &__item {
+    grid-column: 1;
+    grid-row: 1;
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+    overflow: hidden;
+    &.left {
+      transform: translateX(-105%);
+    }
+    &.right {
+      transform: translateX(105%);
+    }
+  }
+  &__list {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    list-style-type: none;
+  }
+  .chevron-left,
+  .chevron-right,
+  .close {
+    fill: white;
+    filter: drop-shadow(0.125rem 0.125rem 0.35rem var(--black-50));
+    max-width: 2rem;
+    width: 100%;
+  }
+  .close {
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+}
+.lightbox {
+  background-color: var(--black-95);
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 65vw 1fr;
+  grid-template-rows: 1fr 80vh 1fr;
+  padding: 2rem 1rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .image-carousel {
+    &__button {
+      &--next, 
+      &--prev {
+        grid-row: 2;
+        svg { margin-bottom: 4rem; }
+      }
+      &--lightbox-close {
+        display: block;
+        grid-column: 2;
+      }
+      &--lightbox-open {
+        display: none;
+      }
+    }
+    &__counter {
+      display: inline-block;
+    }
+    &__figcaption {
+      align-self: start;
+      display: block;
+      justify-self: center;
+      margin-bottom: 3rem;
+    }
+    &__figure {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto;
+      height: 100%;
+    }
+    &__image {
+      align-self: center;
+      height: auto;
+      object-fit: scale-down;
+      max-height: 100%;
+      max-width: 100%;
+    }
+    &__item {
+      &.left {
+        transform: translateX(-100vw);
+      }
+      &.right {
+        transform: translateX(100vw);
+      }
+    }
+    &__list {
+      grid-row: 2;
+      //grid-column: 2;
+    }
+  }
+}
