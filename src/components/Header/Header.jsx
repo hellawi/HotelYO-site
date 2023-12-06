@@ -3,8 +3,7 @@ import styles from "./Header.module.css";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LanguageSwitch from "../LanguageSwitch/LanguageSwitch";
 import { useTranslation } from "react-i18next";
-import TemporaryDrawer from "../SideBar/SideBar";
-import SwipeableTemporaryDrawer from "../SideBar/SideBar";
+import SwipeableTemporaryDrawer from "../Sidebar/Sidebar";
 
 function Header() {
   const { t } = useTranslation()
