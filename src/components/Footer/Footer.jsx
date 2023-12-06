@@ -7,22 +7,22 @@ function Footer() {
       <div className="footer-left">
         <ul className="ul">
           <li>
-            <a href="" className="a-footer-left">
+            <a href="/apartments" className="a-footer-left">
               {t('apartments')}
             </a>
           </li>
           <li>
-            <a href="" className="a-footer-left">
+            <a href="/restaurant" className="a-footer-left">
               {t('res')}
             </a>
           </li>
           <li>
-            <a href="" className="a-footer-left">
+            <a href="/aboutus" className="a-footer-left">
               {t('aboutus')}
             </a>
           </li>
           <li>
-            <a href="" className="a-footer-left">
+            <a href="/contacts" className="a-footer-left">
               {t('contacts')}
             </a>
           </li>
