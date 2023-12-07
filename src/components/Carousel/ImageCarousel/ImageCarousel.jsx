@@ -8,7 +8,7 @@ const ImageCarousel = ({ images, width, height }) => {
   const [lightboxOpen] = useState(false);
 
   useEffect(() => {
-    setImageCount(images.length);
+    setImageCount(images.length)
   }, [images]);
 
   return (

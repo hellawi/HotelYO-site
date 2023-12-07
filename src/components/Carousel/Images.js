@@ -78,3 +78,44 @@ export const Images03 = () => {
     }
   ]
 }
+
+export const Images04 = () => {
+  return [
+    {
+      source: 
+      '/presentation/01.jpg'
+    },
+    {
+      source: 
+      '/presentation/02.jpg'
+    },
+    {
+      source: 
+      '/presentation/03.jpg'
+    },
+    {
+      source: 
+      '/presentation/04.jpg'
+    },
+    {
+      source: 
+      '/presentation/05.jpg'
+    },
+    {
+      source: 
+      '/presentation/06.jpg'
+    },
+    {
+      source: 
+      '/presentation/07.jpg'
+    },
+    {
+      source: 
+      '/presentation/08.jpg'
+    },
+    {
+      source: 
+      '/presentation/09.jpg'
+    },
+  ]
+}

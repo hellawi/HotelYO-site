@@ -55,19 +55,33 @@ export default function SwipeableTemporaryDrawer() {
       <Divider />
       <List>
         {[
-          <a href="/apartments" style={{color: 'black'}}>
+          <a href="/apartments" style={{ color: "black", fontSize: "20px" }}>
+            <span
+              className="material-symbols-outlined"
+              style={{ marginRight: "5vw" }}
+            >
+              apartment
+            </span>
             {t("apartments")}
           </a>,
-          <a href="/restaurant" style={{color: 'black'}}>
+          <a href="/restaurant" style={{ color: "black", fontSize: "20px" }}>
+            <span
+              className="material-symbols-outlined"
+              style={{ marginRight: "5vw" }}
+            >
+              restaurant
+            </span>
             {t("res")}
           </a>,
-          <a href="/aboutus" style={{color: 'black'}}>
+          <a href="/aboutus" style={{ color: "black", fontSize: "20px" }}>
+            <span className="material-symbols-outlined" style={{ marginRight: "5vw" }}>info</span>
             {t("aboutus")}
           </a>,
-          <a href="/contacts" style={{color: 'black'}}>
+          <a href="/contacts" style={{ color: "black", fontSize: "20px" }}>
+            <span className="material-symbols-outlined" style={{ marginRight: "5vw" }}>contacts</span>
             {t("contacts")}
-          </a>
-        ].map((text, index) => (
+          </a>,
+        ].map((text) => (
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemText primary={text} />

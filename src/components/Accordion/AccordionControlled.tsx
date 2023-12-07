@@ -16,8 +16,7 @@ export default function AccordionControlled() {
       >
         <AccordionSummary>Menu</AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+          тут должно быть меню ресторана
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -28,8 +27,7 @@ export default function AccordionControlled() {
       >
         <AccordionSummary>Breakfasts</AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+          инфа о завтраках
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -40,8 +38,7 @@ export default function AccordionControlled() {
       >
         <AccordionSummary>Lobby-bar</AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+          лобби-бар (если имеется)
         </AccordionDetails>
       </Accordion>
 
@@ -53,8 +50,7 @@ export default function AccordionControlled() {
       >
         <AccordionSummary>Solemn events, wedding</AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+          инфа про торжественные мероприятия и в-ть свадеб
         </AccordionDetails>
       </Accordion>
 
@@ -66,8 +62,7 @@ export default function AccordionControlled() {
       >
         <AccordionSummary>Corporate events</AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+          инфа про корпоративные мероприятия
         </AccordionDetails>
       </Accordion>
     </AccordionGroup>

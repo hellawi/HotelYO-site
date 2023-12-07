@@ -1,6 +1,6 @@
 header{
   background-color: #09255c;
-  width: 1678px;
+  width: 1670px;
   height: 110px;
   display: flex;
   align-items: center;
@@ -52,6 +52,6 @@ li{
   .res-block{
     display: flex;
     align-items: center;
-    margin-left: 190px;
+    margin-left: 176px;
   }
 }

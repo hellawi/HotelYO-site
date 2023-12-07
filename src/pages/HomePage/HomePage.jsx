@@ -1,18 +1,20 @@
 import { useTranslation } from "react-i18next";
 import styles from "./HomePage.module.css";
+import { useEffect, useState } from "react";
+import { Images03, Images04 } from "../../components/Carousel/Images";
+import ImageCarousel from "../../components/Carousel/ImageCarousel/ImageCarousel";
+import OverlayBg from "../../components/OverlayBg/OverlayBg";
 function HomePage() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
+  const [imagesStandard, setImagesStandard] = useState()
+  useEffect(() => {
+    setImagesStandard(Images04)
+  }, [])
   return (
     <div>
-      <div className={styles["hero"]}>
-        <h1 className={styles["hero-title"]}>
-          {t('mainTitle')}
-        </h1>
-        <span className={styles["hotel-yo"]}>Hotel YO</span>
-      </div>
-
-      <div className={styles['main-box']}>
-        <h1 className="heading">{t('aboutus')}</h1>
+      <OverlayBg />
+      <main className={styles["main-box"]}>
+        <h1 className="heading">{t("aboutus")}</h1>
         <div className={styles["aboutus-text-main"]}>
           <img
             src="/hotel-fasad.jpeg"
@@ -20,27 +22,13 @@ function HomePage() {
             className={styles["aboutus-img-fasad"]}
           />
           <p className={styles["aboutus-textt-main"]}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni odit
-            eveniet, error sed consequuntur nulla nihil laborum consectetur
-            recusandae obcaecati minus maxime animi eligendi ratione id dicta
-            architecto atque maiores rerum soluta, ab aliquid vero dolorem?
-            Suscipit perspiciatis doloribus ullam iusto doloremque similique
-            nisi quos, tempora officia impedit, ratione ea repellendus sed,
-            facilis quod. Vitae ullam iste explicabo commodi facilis atque
-            culpa? Alias odit, soluta cupiditate a eius dolorum laudantium!
-            Repellendus, saepe? Optio, corporis amet illo dolor et voluptate ex
-            suscipit exercitationem tenetur nisi doloribus rerum facere
-            excepturi natus, animi vel! Similique reiciendis reprehenderit nemo
-            nisi, illo enim iure, voluptatum ab necessitatibus mollitia
-            cupiditate. Sequi quas odit recusandae rem nisi. Quos suscipit
-            cumque repudiandae quaerat cupiditate deleniti veritatis, quibusdam
-            dignissimos excepturi necessitatibus asperiores placeat.
-            Perspiciatis aut praesentium non iure labore, nihil possimus quia
-            omnis architecto unde quis culpa quaerat veniam nostrum, amet
-            officia modi iste ea facilis!
+            {t('mainDesc')}
           </p>
         </div>
-      </div>
+        <div className={styles['image-carousel-box']}>
+          <ImageCarousel images={imagesStandard} width='650px' />
+        </div>
+      </main>
     </div>
   );
 }

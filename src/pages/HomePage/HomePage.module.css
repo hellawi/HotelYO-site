@@ -1,45 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Irish+Grover&family=Italianno&family=Montserrat+Alternates&family=Open+Sans&family=Roboto:wght@300&display=swap');
-.hero{
-  margin-top: 1px;
-	background: url(/img_premain.png) center/cover no-repeat;
-	padding: 200px 0;
-	text-align: center;
-}
-.hero-title{
+.main-box{
+  background-color: #6080c0;
   color: white;
-  font-size: 55px;
 }
-.hotel-yo{
-  color: white;
-  font-family: Italianno;
-  font-size: 80px;
-  letter-spacing: 5px;
-}
-.main-heading{
+.main-heading {
   text-align: center;
   font-size: 45px;
   text-decoration: underline;
   letter-spacing: 5px;
 }
-.aboutus-text-main{
+.aboutus-text-main {
   display: flex;
   font-size: 25px;
+  letter-spacing: 3px;
 }
-.aboutus-img-fasad{
-  width: 1000px;
+.aboutus-img-fasad {
+  width: 600px;
   height: 500px;
 }
-.aboutus-textt-main{
+.aboutus-textt-main {
   padding-left: 15px;
   padding-right: 15px;
 }
+.image-carousel-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 768px) {
- .aboutus-img-fasad{
-  width: 500px;
-  height: 300px;
- }
- .aboutus-text-main{
-  display: block;
- }
+  .aboutus-img-fasad {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    height: 300px;
+  }
+  .aboutus-text-main {
+    display: block;
+  }
+  .aboutus-textt-main{
+    text-align: center;
+  }
 }
