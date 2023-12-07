@@ -6,7 +6,7 @@ import ImageCarousel from "../../components/Carousel/ImageCarousel/ImageCarousel
 import OverlayBg from "../../components/OverlayBg/OverlayBg";
 function HomePage() {
   const { t } = useTranslation();
-  const [imagesStandard, setImagesStandard] = useState()
+  const [imagesStandard, setImagesStandard] = useState([])
   useEffect(() => {
     setImagesStandard(Images04)
   }, [])
