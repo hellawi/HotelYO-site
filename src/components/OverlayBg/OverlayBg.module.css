@@ -37,10 +37,14 @@
   align-items: center;
 }
 .hotel-yo {
-  color: white;
+  color: rgb(185, 172, 235);
   font-family: Italianno;
-  font-size: 100px;
+  font-size: 130px;
   letter-spacing: 5px;
+}
+.yo{
+  color: rgb(185, 172, 235);
+  font-family: Italianno;
 }
 
 @media screen and (max-width: 768px) {

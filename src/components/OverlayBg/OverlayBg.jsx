@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import videoBg from "../../assets/sea3.mp4";
 import videoBgRes from "../../assets/videoBg.mp4";
 import styles from './OverlayBg.module.css'
+import RotatingText from "../RotatingText/RotatingText";
 
 function OverlayBg() {
   const { t } = useTranslation();
@@ -9,12 +10,16 @@ function OverlayBg() {
     <div>
       <div className={styles["fullscreen-bg"]}>
         <div className={styles["overlay"]}>
-          <h1>
+          <RotatingText />
+          {/* <h1>
             {t("mainTitle")}
             <br />
-          </h1>
+          </h1> */}
+          <br />
+          <br />
+          <br />
           <div className={styles["overlay-italianno"]}>
-            <span className={styles["hotel-yo"]}>Hotel YO</span>
+            <span className={styles["hotel-yo"]}>Hotel <span className={styles['yo']}>YO</span></span>
           </div>
         </div>
         <video
