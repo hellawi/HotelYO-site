@@ -199,12 +199,6 @@ svg {
   text-decoration: none;
   text-transform: uppercase;
 }
-.a-footer-left:hover{
-  color: #fbb900;
-  transition: .3s;
-}
-
-/*  */
 @media screen and (max-width: 768px) {
 	.footer-distributed{
 		font: bold 14px sans-serif;

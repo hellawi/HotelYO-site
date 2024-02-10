@@ -1,9 +1,11 @@
 import { Chip } from "@mui/joy";
 import styles from "./AboutUsPage.module.css";
+import { useTranslation } from "react-i18next";
 function AboutUsPage() {
+  const { t } = useTranslation()
   return (
     <div>
-      <h1 className="heading">About us</h1>
+      <h1 className="heading">{t('aboutus')}</h1>
       <p className={styles["aboutus-text"]}>
         Lorem ipsum dolor sit amet. Aut voluptatem quisquam vel quia consequatur
         qui ratione architecto ut cupiditate dolorem aut iusto unde et dolores
@@ -40,17 +42,17 @@ function AboutUsPage() {
       </div>
       <div className={styles["photo-box-01"]}>
         <img
-          src="/aboutus/789257823.jpeg"
+          src="/aboutus/2.jpeg"
           alt=""
           className={styles["img-aboutus"]}
         />
         <img
-          src="/aboutus/789260289.jpeg"
+          src="/aboutus/3.jpeg"
           alt=""
           className={styles["img-aboutus"]}
         />
         <img
-          src="/aboutus/789386628.jpeg"
+          src="/aboutus/4.jpeg"
           alt=""
           className={styles["img-aboutus"]}
         />
@@ -82,7 +84,7 @@ function AboutUsPage() {
           className={styles["img-aboutus"]}
         />
       </div>
-      <h1 className="heading">Our advantages</h1>
+      <h1 className="heading">{t('advantages')}</h1>
       <div className={styles["advantages-box"]}>
         <span className={styles["advantage"]}>
           <Chip color="success" size="lg">

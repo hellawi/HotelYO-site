@@ -26,6 +26,15 @@
   justify-content: center;
   align-items: center;
 }
+.our-partners-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-partner{
+  width: 200px;
+  margin-right: 35px;
+}
 
 @media screen and (max-width: 768px) {
   .aboutus-img-fasad {
@@ -39,5 +48,9 @@
   }
   .aboutus-textt-main{
     text-align: center;
+  }
+  .our-partners-box{
+    display: flex;
+    flex-direction: column;
   }
 }

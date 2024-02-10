@@ -10,7 +10,7 @@ function Header() {
   return (
     <header>
       <a href="/">
-        <img src="/logo.jpeg" alt="" className={styles["logo"]} />
+        <img src="/logos/logo.jpeg" alt="" className={styles["logo"]} />
       </a>
       <div className={styles['res-block']}>
           <LanguageSwitch />

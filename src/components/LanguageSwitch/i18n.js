@@ -21,12 +21,14 @@ i18n
           adj02: 'attractive',
           adj03: 'fascinating',
           mainDesc: "Welcome to Hotel Yo - a comfortable and luxurious 3-star hotel on the Black Sea coast. An excellent location in the center of the resort St. Constantine and Helena allows you to “keep the most important thing in the palm of your hand” - a large Lidl hypermarket, the main attractions of Varna and the sea. With joy and a smile, we will provide you with the most comfortable and excellent rooms with a beautiful and picturesque view of the sea. The room rate includes free breakfast, access to an outdoor pool, Wi-Fi, cable TV and hot water!",
+          partners: 'Our partners',
           forReservations: "For reservations: ",
           ourApartments: "Our apartments",
           bookNowBtn: "Book now",
           contactsAddress:
             "47th St., St. St. Konstantin and Elena, 9006 Bulgaria",
           contactsHeading: "Our contacts",
+          advantages: 'Our advantages'
         },
       },
       bg: {
@@ -40,12 +42,14 @@ i18n
           adj02: 'хубава',
           adj03: 'прекрасна',
           mainDesc: "Добре дошли в хотел Йо - комфортен и луксозен 3-звезден хотел на брега на Черно море. Хубава локация в центъра на курорта Св. Св. Константин и Елена ви позволява да „пазите най-важното в дланта си” - голям хипермаркет Lidl, основните забележителности на Варна и морето. С радост и усмивка ние ще ви предоставим най-удобните и отлични стаи с красива и живописна гледка към морето. Цената на стаята включва безплатна закуска, достъп до външен басейн, Wi-Fi, кабелна телевизия и топла вода!",
+          partners: 'Нашите партньори',
           forReservations: "За резервации: ",
           ourApartments: "Нашите апартаменти",
           bookNowBtn: "Резервирай сега",
           contactsAddress:
             'ул. "47-та", Св.Св. Константин и Елена, 9006 България',
           contactsHeading: "Нашите контакти",
+          advantages: 'Нашите предимства'
         },
       },
       de: {
@@ -59,12 +63,14 @@ i18n
           adj02: 'attraktiv',
           adj03: 'faszinierend',
           mainDesc: "Willkommen im Hotel Yo – einem komfortablen und luxuriösen 3-Sterne-Hotel an der Schwarzmeerküste. Eine ausgezeichnete Lage im Zentrum des Ferienortes St. Konstantin und Helena ermöglicht es Ihnen, „das Wichtigste in Ihrer Hand zu behalten“ – einen großen Lidl-Hypermarkt, die Hauptattraktionen von Varna und das Meer. Mit Freude und einem Lächeln stellen wir Ihnen die komfortabelsten und besten Zimmer mit einem wunderschönen und malerischen Blick auf das Meer zur Verfügung. Der Zimmerpreis beinhaltet kostenloses Frühstück, Zugang zu einem Außenpool, WLAN, Kabel-TV und Warmwasser!",
+          partners: 'Unsere Partner',
           forReservations: "Über die Buchung: ",
           ourApartments: "Unsere Wohnungen",
           bookNowBtn: "Buchen Sie jetzt",
           contactsAddress:
             "st. 47., St. St. Konstantin und Elena, 9006 Bulgarien",
           contactsHeading: "Unsere Kontakte",
+          advantages: 'Unsere Vorteile'
         },
       },
       ru: {
@@ -79,12 +85,14 @@ i18n
           adj03: 'незабываемым',
           mainDesc:
             'Добро пожаловать в Отель Йо – комфортный и роскошный 3-звездочный отель на побережье Черного моря. Отличная локация в центре курорта Св. Константин и Елена позволяет "держать самое главное на ладони" - крупному гипермаркету Лидл, главным достопримечательностям Варны и морю. Мы с радостью и улыбкой предоставим Вам самые уютные и самые лучшие номера с прекрасным и живописным видом на море. В стоимость номера включены бесплатные завтраки, доступ к открытому бассейну, Wi-Fi, кабельному телевидению и горячей воде!',
+          partners: 'Наши партнеры',
           forReservations: "Бронирование: ",
           ourApartments: "Наши апартаменты",
           bookNowBtn: "Забронировать сейчас",
           contactsAddress:
             "ул. 47-ая, Св.Св. Константин и Елена, 9006 Болгария",
           contactsHeading: "Наши контакты",
+          advantages: 'Наши преимущества'
         },
       },
     },

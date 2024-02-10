@@ -2,23 +2,35 @@ const Images01 = () => {
   return [
     {
       source:
-        "/apartments/bedroom.png",
+        "/apartments/01/1.jpeg",
     },
     {
       source:
-        "/apartments/bedroom2.jpeg",
+        "/apartments/01/2.jpeg",
     },
     {
       source:
-        "https://cdn.actualno.eu/actualno_2013/upload/news/2022/04/05/0103869001649164045_1919529_920x708.webp",
+        "/apartments/01/3.jpeg",
     },
     {
       source:
-        "https://img.freepik.com/free-photo/beautiful-seaside-landscape_23-2150423932.jpg",
+        "/apartments/01/4.jpeg",
     },
     {
       source:
-        "https://st5.depositphotos.com/35914836/64942/i/450/depositphotos_649421432-stock-photo-beautiful-sunrise-over-the-sea.jpg",
+        "/apartments/01/5.jpeg",
+    },
+    {
+      source:
+        "/apartments/01/6.jpeg",
+    },
+    {
+      source:
+        "/apartments/01/7.jpeg",
+    },
+    {
+      source:
+        "/apartments/01/8.jpeg",
     },
   ];
 };

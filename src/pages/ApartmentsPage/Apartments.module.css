@@ -1,17 +1,12 @@
-.box-apartments, .box-apartments-02{
+.box-apartments{
   display: flex;
-  padding-bottom: 5em;
   padding-left: 6em;
-}
-.photo-room{
-  width: 100px;
-  height: 100px;
 }
 
 @media screen and (max-width: 768px) {
-  .box-apartments, .box-apartments-02{
+  .box-apartments{
     display: flex;
     flex-direction: column;
-    padding-left: 0;
+    padding-left: 1.5em;
   }
 }
