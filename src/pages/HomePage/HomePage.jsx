@@ -23,11 +23,14 @@ function HomePage() {
           />
           <p className={styles["aboutus-textt-main"]}>{t("mainDesc")}</p>
         </div>
-        <div className={styles["image-carousel-box"]}>
-          <ImageCarousel images={imagesStandard} width="650px" />
+        <div>
+          <a href="/aboutus" className={styles['readMoreLink']}>Read more</a>
         </div>
+        {/* <div className={styles["image-carousel-box"]}>
+          <ImageCarousel images={imagesStandard} width="650px" />
+        </div> */}
       </main>
-      <div className={styles["our-partners"]}>
+      {/* <div className={styles["our-partners"]}>
         <h1 className="heading">{t('partners')}</h1>
         <div className={styles["our-partners-box"]}>
           <a href="https://dentaprime.bg/">
@@ -59,7 +62,7 @@ function HomePage() {
             />
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

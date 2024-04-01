@@ -9,8 +9,9 @@ function Header() {
   const { t } = useTranslation()
   return (
     <header>
-      <a href="/">
-        <img src="/logos/logo.jpeg" alt="" className={styles["logo"]} />
+      <a href="/" className={styles['link']}>
+        <h1 className={styles['logo']}>Hotel YO</h1>
+        {/* <img src="/logos/logo.jpeg" alt="" className={styles["logo"]} /> */}
       </a>
       <div className={styles['res-block']}>
           <LanguageSwitch />

@@ -15,12 +15,19 @@ function RestaurantPage() {
   return (
     <div>
       <h1 className="heading">{t('res')}</h1>
-      <div className={styles['accordion']}>
+      {/* <div className={styles['accordion']}>
         <AccordionControlled />
-      </div>
+      </div> */}
       <div className={styles['carousel']}>
         <ImageCarousel width='700px' images={images} />
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   )
 }

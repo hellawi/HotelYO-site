@@ -21,6 +21,16 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+.readMoreLink{
+  font-size: 30px;
+  color: white;
+  margin-left: 555px;
+}
+.readMoreLink:hover{
+  color: #fbb900;
+  border-bottom-color: #fbb900;
+  transition: .3s;
+}
 .image-carousel-box{
   display: flex;
   justify-content: center;

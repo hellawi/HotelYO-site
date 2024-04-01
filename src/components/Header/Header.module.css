@@ -1,6 +1,6 @@
 header{
   background-color: #09255c;
-  width: 1670px;
+  width: 1680px;
   height: 110px;
   display: flex;
   align-items: center;
@@ -8,12 +8,20 @@ header{
 .res-block{
   display: none;
 }
+.link{
+  text-decoration: none;
+}
 .logo{
+  color: white;
+  margin-left: 0.3em;
+  margin-top: 0.1em;
+}
+/* .logo{
   width: 100px;
   height: 98px;
   margin-left: 0.3rem;
   margin-top: 0.1rem;
-}
+} */
 .links{
   display: block;
   margin: 0 auto;
@@ -53,5 +61,11 @@ li{
     display: flex;
     align-items: center;
     margin-left: 176px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  header{
+    width: 1920px;
   }
 }

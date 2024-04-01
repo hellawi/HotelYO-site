@@ -28,7 +28,7 @@ function ContactsPage() {
             <span class="material-symbols-outlined" style={{ marginRight: 10 }}>
               call
             </span>
-            +359520000000
+            +35952361294
           </a>
           <a
             href="mailto:administration@yo-hotel.com"
@@ -37,7 +37,7 @@ function ContactsPage() {
             <span class="material-symbols-outlined" style={{ marginRight: 10 }}>
               mail
             </span>
-            administration@yo-hotel.com
+            reserve@yo-hotel.com
           </a>
         </div>
 
@@ -50,17 +50,11 @@ function ContactsPage() {
             </span>
             +359882524590
           </a>
-          <a href="tel:+359520000000" className={styles["text-box"]}>
-            <span class="material-symbols-outlined" style={{ marginRight: 10 }}>
-              call
-            </span>
-            +359520000000
-          </a>
           <a href="mailto:rs@yo-hotel.com" className={styles["text-box"]}>
             <span class="material-symbols-outlined" style={{ marginRight: 10 }}>
               mail
             </span>
-            rs@yo-hotel.com
+            administration@yo-hotel.com
           </a>
         </div>
       </div>

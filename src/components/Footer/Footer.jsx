@@ -54,8 +54,8 @@ function Footer() {
               <p> +359 88 252 4590</p>
             </a>
             <br />
-            <a href="tel:+359520000000" className="number">
-              <p> +359 52 000 0000</p>
+            <a href="tel:+35952361294" className="number">
+              <p> +359 52 361 294</p>
             </a>
           </div>
         </div>
@@ -70,10 +70,10 @@ function Footer() {
           </svg>
           <p style={{ fontSize: "17px" }}>
             <a
-              href="mailto:administration@yo-hotel.com"
+              href="mailto:reserve@yo-hotel.com"
               className="email-link"
             >
-              administration@yo-hotel.com
+              reserve@yo-hotel.com
             </a>
           </p>
         </div>

@@ -8,14 +8,27 @@ import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
-import { Card, CardActions, CardContent, CardMedia, Chip } from "@mui/material";
-import KitchenSharpIcon from '@mui/icons-material/KitchenSharp';
+import { Card, CardContent, Chip } from "@mui/material";
+import KitchenSharpIcon from "@mui/icons-material/KitchenSharp";
+import SignalWifi4BarOutlinedIcon from "@mui/icons-material/SignalWifi4BarOutlined";
+import ShowerOutlinedIcon from "@mui/icons-material/ShowerOutlined";
+import BalconyOutlinedIcon from "@mui/icons-material/BalconyOutlined";
+import AcUnitOutlinedIcon from "@mui/icons-material/AcUnitOutlined";
+import TvOutlinedIcon from "@mui/icons-material/TvOutlined";
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
-
-function SwipeableTextMobileStepper({ images, category, description, price }) {
+function SwipeableTextMobileStepper({
+  images,
+  category,
+  description,
+  price,
+  href,
+  advShower, 
+  advTerrase
+}) {
   const theme = useTheme();
+  const { t } = useTranslation();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
 
@@ -32,7 +45,7 @@ function SwipeableTextMobileStepper({ images, category, description, price }) {
   };
 
   return (
-    <Card sx={{ maxWidth: 345, marginRight: '5vw', marginBottom: '5vw' }}>
+    <Card sx={{ maxWidth: 345, marginRight: "5vw", marginBottom: "5vw" }}>
       <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
         <Paper
           square
@@ -113,32 +126,83 @@ function SwipeableTextMobileStepper({ images, category, description, price }) {
         </Typography>
         <br />
         <div>
-          <Chip label='Mini bar' icon={<KitchenSharpIcon />} sx={{bgcolor: '#f0b907', fontSize: '12px', marginRight: '5px', marginBottom: '10px'}} />
-          <Chip label='Mini bar' icon={<KitchenSharpIcon />} sx={{bgcolor: '#f0b907', fontSize: '12px', marginRight: '5px', marginBottom: '10px'}} />
-          <Chip label='Mini bar' icon={<KitchenSharpIcon />} sx={{bgcolor: '#f0b907', fontSize: '12px', marginRight: '5px', marginBottom: '10px'}} />
-          <Chip label='Mini bar' icon={<KitchenSharpIcon />} sx={{bgcolor: '#f0b907', fontSize: '12px', marginRight: '5px', marginBottom: '10px'}} />
-          <Chip label='Mini bar' icon={<KitchenSharpIcon />} sx={{bgcolor: '#f0b907', fontSize: '12px', marginRight: '5px', marginBottom: '10px'}} />
-          <Chip label='Mini bar' icon={<KitchenSharpIcon />} sx={{bgcolor: '#f0b907', fontSize: '12px', marginRight: '5px', marginBottom: '10px'}} />
+          <Chip
+            label={t('cabeltv')}
+            icon={<TvOutlinedIcon />}
+            sx={{
+              bgcolor: "#f0b907",
+              fontSize: "12px",
+              marginRight: "5px",
+              marginBottom: "10px",
+            }}
+          />
+          <Chip
+            label={t('conditioner')}
+            icon={<AcUnitOutlinedIcon />}
+            sx={{
+              bgcolor: "#f0b907",
+              fontSize: "12px",
+              marginRight: "5px",
+              marginBottom: "10px",
+            }}
+          />
+          <Chip
+            label={advTerrase}
+            icon={<BalconyOutlinedIcon />}
+            sx={{
+              bgcolor: "#f0b907",
+              fontSize: "12px",
+              marginRight: "5px",
+              marginBottom: "10px",
+            }}
+          />
+          <Chip
+            label={advShower}
+            icon={<ShowerOutlinedIcon />}
+            sx={{
+              bgcolor: "#f0b907",
+              fontSize: "12px",
+              marginRight: "5px",
+              marginBottom: "10px",
+            }}
+          />
+          <Chip
+            label="WiFi"
+            icon={<SignalWifi4BarOutlinedIcon />}
+            sx={{
+              bgcolor: "#f0b907",
+              fontSize: "12px",
+              marginRight: "5px",
+              marginBottom: "10px",
+            }}
+          />
         </div>
         <br />
-        <span style={{ fontSize: "30px", fontWeight: "bold", color: '#0b92e6' }}>{price}</span>
+        <span
+          style={{ fontSize: "30px", fontWeight: "bold", color: "#0b92e6" }}
+        >
+          {price}
+        </span>
       </CardContent>
 
       <div style={{ marginBottom: "15px" }}>
-        <Button
+        <a href={href} style={{textDecoration: 'none'}} target="_blank">
+        `<Button
           size="small"
           variant="outlined"
           color="error"
-          sx={{ marginBottom: "10px" }}
+          sx={{marginBottom: '10px'}}
         >
           <img src="/skidka.png" alt="" width="60px" height="60px" />
-          Book now
+          {t("bookNowBtn")}
         </Button>
-
-        <Button size="small" variant="outlined">
-          <img src="/logos/booking.png" alt="" width="60px" height="60px" />
-          Book via Booking
-        </Button>
+        </a>
+        <a href="https://www.booking.com/hotel/bg/yo.bg.html" style={{textDecoration: 'none'}} target="_blank">
+          <Button size="small" variant="outlined">
+            <img src="/logos/booking.png" alt="" width="60px" height="60px" />
+            Book via Booking
+          </Button>
+        </a>
       </div>
     </Card>
   );

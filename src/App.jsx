@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import HomePage from "./pages/HomePage/HomePage"
 import SharedLayout from "./layouts/SharedLayout"
-import ApartmentsPage from "./pages/ApartmentsPage/ApartmentsPage"
+import ApartmentsPage from "./pages/ApartmentsPage/ApartmentssPage"
 import RestaurantPage from "./pages/Restaurant/RestaurantPage"
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage"
 import ContactsPage from "./pages/ContactsPage/ContactsPage"
